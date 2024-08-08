@@ -20,4 +20,14 @@ class Front_page extends CI_Controller
         $this->load->view('contact', $this->app_data);
         $this->footer();
     }
+    public function profile(){
+        $this->header();
+        $this->load->view('profile', $this->app_data);
+        $this->footer();
+    }
+    public function service(){
+        $this->header();
+        $this->load->view('service', $this->app_data);
+        $this->footer();
+    }
 }

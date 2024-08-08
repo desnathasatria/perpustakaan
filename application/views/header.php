@@ -64,55 +64,47 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand p-0">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="<?= base_url() ?>assets/img/logo.png" alt="Logo">
-                            </td>
-                            <td>
-                                <h1 class="text-primary mb-0">Perpustakaan Kota Kediri</h1>
-                            </td>
-                        </tr>
-                    </table>
-                </a>
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand p-0">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="<?= base_url() ?>assets/img/logo.png" alt="Logo">
+                        </td>
+                        <td>
+                            <h1 class="text-primary mb-0">Perpustakaan Kota Kediri</h1>
+                        </td>
+                    </tr>
+                </table>
+            </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="<?php echo base_url(); ?>" class="nav-item nav-link active">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Profil</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a href="feature.html" class="dropdown-item">Sejarah</a>
-                                <a href="team.html" class="dropdown-item">Visi & Misi</a>
-                                <a href="team.html" class="dropdown-item">Stuktur Anggota</a>
-                            </div>
-                        </div>
-                        <a href="<?php echo base_url("Front_page/contact"); ?>" class="nav-item nav-link">Kontak</a>
-                    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-0 mx-lg-auto">
+                    <a href="<?= base_url() ?>" class="nav-item nav-link <?= $this->uri->segment(1) == '' ? 'active' : '' ?>">Home</a>
+                    <a href="<?= base_url("Front_page/profile") ?>" class="nav-item nav-link <?= $this->uri->segment(2) == 'profile' ? 'active' : '' ?>">Profil</a>
+                    <a href="<?= base_url("Front_page/service") ?>" class="nav-item nav-link <?= $this->uri->segment(2) == 'service' ? 'active' : '' ?>">Pelayanan</a>
+                    <a href="<?= base_url("Front_page/contact") ?>" class="nav-item nav-link <?= $this->uri->segment(2) == 'contact' ? 'active' : '' ?>">Kontak</a>
                 </div>
-                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                        <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px;">
-                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                        </div>
-                    </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Hubungi Kami</span>
-                        <a href="tel: 0354693268"><span class="text-dark">0354693268</span></a>
+            </div>
+            <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                    <i class="fa fa-phone-alt fa-2x"></i>
+                    <div class="position-absolute" style="top: 7px; right: 12px;">
+                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
                     </div>
+                </a>
+                <div class="d-flex flex-column ms-3">
+                    <span>Hubungi Kami</span>
+                    <a href="tel: 0354693268"><span class="text-dark">0354693268</span></a>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </div>
-    <!-- Navbar & Hero End -->
+</div>
+<!-- Navbar & Hero End -->
