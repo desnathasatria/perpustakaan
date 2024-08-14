@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="<?= base_url() ?>assets/lib/animate/animate.min.css"/>
         <link href="<?= base_url() ?>assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
         <link href="<?= base_url() ?>assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
 
         <!-- Customized Bootstrap Stylesheet -->
