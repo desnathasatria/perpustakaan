@@ -8,7 +8,7 @@
                             <div class="col-md-6 col-lg-6 col-xl-5">
                                 <div class="footer-item">
                                     <a href="index.html" class="p-0">
-                                        <h3 class="text-white"></i> Perpustakaan Kota Kediri</h3>
+                                        <h3 class="text-white"></i> Perpustakaan Umum Kota Kediri</h3>
                                     </a>
                                     <p class="text-white mb-4">Perpustakaan yang terdapat di kota kediri</p>
                                     <div class="footer-btn d-flex">
