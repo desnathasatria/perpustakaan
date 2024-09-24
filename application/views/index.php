@@ -55,66 +55,66 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" class="img-fluid w-100 rounded" alt="Kegiatan Literasi" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" data-img-title="Kegiatan Literasi">
+                            <img src="<?= base_url() ?>assets/img/ruang3.jpg" class="img-fluid w-100 rounded" alt="Ruang Literasi" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/ruang3.jpg" data-img-title="Kegiatan Literasi">
                         </div>
                         <div class="gallery-content p-4">
-                            <h4 class="mb-2">Kegiatan Literasi</h4>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h4 class="mb-2">Ruang Literasi</h4>
+                            <p class="mb-2">Berikut merupakan Ruang Listerasi yang terdapat pada Perpustakaan Kota Kediri</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" class="img-fluid w-100 rounded" alt="Kegiatan Literasi" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" data-img-title="Kegiatan Literasi">
+                            <img src="<?= base_url() ?>assets/img/lobby.jpg" class="img-fluid w-100 rounded" alt="Lobby" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/lobby.jpg" data-img-title="Kegiatan Literasi">
                         </div>
                         <div class="gallery-content p-4">
-                            <h4 class="mb-2">Kegiatan Literasi</h4>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h4 class="mb-2">Lobby</h4>
+                            <p class="mb-2">Berikut merupakan Lobby yang terdapat pada Perpustakaan Kota Kediri</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" class="img-fluid w-100 rounded" alt="Kegiatan Literasi" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" data-img-title="Kegiatan Literasi">
+                            <img src="<?= base_url() ?>assets/img/pelayanan.jpg" class="img-fluid w-100 rounded" alt="Bagian Pelayanan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/pelayanan.jpg" data-img-title="Kegiatan Literasi">
                         </div>
                         <div class="gallery-content p-4">
-                            <h4 class="mb-2">Kegiatan Literasi</h4>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h4 class="mb-2">Bagian Pelayanan</h4>
+                            <p class="mb-2">Berikut merupakan Bagian Pelayanan yang terdapat pada Perpustakaan Kota Kediri</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" class="img-fluid w-100 rounded" alt="Kegiatan Literasi" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" data-img-title="Kegiatan Literasi">
+                            <img src="<?= base_url() ?>assets/img/rakbuku2.jpg" class="img-fluid w-100 rounded" alt="Rak Buku" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/rakbuku2.jpg" data-img-title="Kegiatan Literasi">
                         </div>
                         <div class="gallery-content p-4">
-                            <h4 class="mb-2">Kegiatan Literasi</h4>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h4 class="mb-2">Rak Buku</h4>
+                            <p class="mb-2">Berikut merupakan Rak Buku yang terdapat pada Perpustakaan Kota Kediri</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" class="img-fluid w-100 rounded" alt="Bedah Buku" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" data-img-title="Bedah Buku">
+                            <img src="<?= base_url() ?>assets/img/depan.jpg" class="img-fluid w-100 rounded" alt="Halaman Depan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/depan.jpg" data-img-title="Bedah Buku">
                         </div>
                         <div class="gallery-content p-4">
-                            <h4 class="mb-2">Bedah Buku</h4>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h4 class="mb-2">Halaman Depan</h4>
+                            <p class="mb-2">Berikut merupakan Halaman Depan yang terdapat pada Perpustakaan Kota Kediri</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" class="img-fluid w-100 rounded" alt="Lomba Menulis" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://i.postimg.cc/nzWSYP3r/Whats-App-Image-2024-08-07-at-09-30-56-e110cb5c.jpg" data-img-title="Lomba Menulis">
+                            <img src="<?= base_url() ?>assets/img/mobil.jpg" class="img-fluid w-100 rounded" alt="Mobil Perpustakaan Keliling" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/mobil.jpg" data-img-title="Lomba Menulis">
                         </div>
                         <div class="gallery-content p-4">
-                            <h4 class="mb-2">Lomba Menulis</h4>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h4 class="mb-2">Mobil Perpustakaan Keliling</h4>
+                            <p class="mb-2">Berikut merupakan Mobil Perpustakaan Keliling yang terdapat pada Perpustakaan Kota Kediri</p>
                         </div>
                     </div>
                 </div>
@@ -152,15 +152,11 @@
                     <div class="service-item">
                         <div class="service-img">
                             <img src="<?= base_url() ?>assets/img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
-                            <div class="service-icon p-3">
-                                <i class="fa fa-users fa-2x"></i>
-                            </div>
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Life Insurance</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a href="#" class="d-inline-block h4 mb-4">Perpustakaan Keliling</a>
+                                <p class="mb-4">Kegiatan Perpustakaan Keliling yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
                     </div>
@@ -169,15 +165,11 @@
                     <div class="service-item">
                         <div class="service-img">
                             <img src="<?= base_url() ?>assets/img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
-                            <div class="service-icon p-3">
-                                <i class="fa fa-hospital fa-2x"></i>
-                            </div>
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Health Insurance</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a href="#" class="d-inline-block h4 mb-4">Literasi Buku Bersama</a>
+                                <p class="mb-4">Kegiatan Listerasi Buku bersama yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
                     </div>
@@ -186,15 +178,11 @@
                     <div class="service-item">
                         <div class="service-img">
                             <img src="<?= base_url() ?>assets/img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
-                            <div class="service-icon p-3">
-                                <i class="fa fa-car fa-2x"></i>
-                            </div>
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Car Insurance</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a href="#" class="d-inline-block h4 mb-4">Lomba</a>
+                                <p class="mb-4">Kegiatan Lomba yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
                     </div>
@@ -203,96 +191,33 @@
                     <div class="service-item">
                         <div class="service-img">
                             <img src="<?= base_url() ?>assets/img/blog-4.png" class="img-fluid rounded-top w-100" alt="">
-                            <div class="service-icon p-3">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Home Insurance</a>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eum!</p>
-                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                                <a href="#" class="d-inline-block h4 mb-4">Pentas Seni</a>
+                                <p class="mb-4">Kegiatan Pentas Seni yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Services</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Service End -->
-
-    <!-- FAQs Start -->
-    <div class="container-fluid faq-section bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="h-100">
-                        <div class="mb-5">
-                            <h4 class="text-primary">Some Important FAQ's</h4>
-                            <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
-                        </div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Q: What happens during Freshers' Week?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body rounded">
-                                        A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Q: What is the transfer application process?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Q: Why should I attend community college?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        A: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-                    <img src="<?= base_url() ?>assets/img/carousel-2.png" class="img-fluid w-100" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FAQs End -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var imageModal = document.getElementById('imageModal');
-        imageModal.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
-            var imgSrc = button.getAttribute('data-img-src');
-            var imgTitle = button.getAttribute('data-img-title');
-            var modalTitle = imageModal.querySelector('.modal-title');
-            var modalImage = document.getElementById('modalImage');
-            
-            modalTitle.textContent = imgTitle;
-            modalImage.src = imgSrc;
+        document.addEventListener('DOMContentLoaded', function() {
+            var imageModal = document.getElementById('imageModal');
+            imageModal.addEventListener('show.bs.modal', function(event) {
+                var button = event.relatedTarget;
+                var imgSrc = button.getAttribute('data-img-src');
+                var imgTitle = button.getAttribute('data-img-title');
+                var modalTitle = imageModal.querySelector('.modal-title');
+                var modalImage = document.getElementById('modalImage');
+
+                modalTitle.textContent = imgTitle;
+                modalImage.src = imgSrc;
+            });
         });
-    });
-</script>
+    </script>
