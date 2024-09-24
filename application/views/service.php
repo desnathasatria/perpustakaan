@@ -1,5 +1,5 @@
-  <!-- Modal Search Start -->
-  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
           <div class="modal-content rounded-0">
               <div class="modal-header">
@@ -44,7 +44,8 @@
                       <p>
                       </p>
                       <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Telah menjadi anggota Perpustakaan dan memegang Kartu Anggota.</p>
-                      <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Saat memesan buku telah mengetahui nomor panggil buku dengan cara melihat OPAC Perpustakaan Umum Daerah Kota Kediri (http://inlis.kedirikota.go.id)</p>
+                      <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Saat memesan buku telah mengetahui nomor panggil buku dengan cara melihat OPAC Perpustakaan Umum Daerah Kota Kediri
+                      <a href="http://inlis.kedirikota.go.id" target="_blank">OPAC</a></p>
                       <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Bersedia menyerahkan Kartu Identitas asli yang dimiliki (KTP/Kartu Pelajar/Kartu Mahasiswa) sebagai jaminan peminjaman buku</p>
                   </div>
               </div>
