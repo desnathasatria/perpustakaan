@@ -151,7 +151,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="<?= base_url() ?>assets/img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
+                            <img src="<?= base_url() ?>assets/img/keliling.jpg" class="img-fluid rounded-top w-100" alt="">
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
@@ -164,7 +164,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="<?= base_url() ?>assets/img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
+                            <img src="<?= base_url() ?>assets/img/literasi.jpg" class="img-fluid rounded-top w-100" alt="">
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
@@ -177,7 +177,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="<?= base_url() ?>assets/img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
+                            <img src="<?= base_url() ?>assets/img/lomba.jpeg" class="img-fluid rounded-top w-100" alt="">
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
@@ -190,7 +190,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                     <div class="service-item">
                         <div class="service-img">
-                            <img src="<?= base_url() ?>assets/img/blog-4.png" class="img-fluid rounded-top w-100" alt="">
+                            <img src="<?= base_url() ?>assets/img/pentas.jpg" class="img-fluid rounded-top w-100" alt="">
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">

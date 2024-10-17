@@ -10,19 +10,44 @@ function delete_error() {
     $("#error-pesan").text("");
 }
 
+var limit = 10; // Increased for testing
+var offset = 0;
+var total_count = 0;
+
 $(document).ready(function () {
     get_kritik_saran();
+
+    $("#btn_tampil_data").on("click", function() {
+        offset += limit;
+        get_kritik_saran(true);
+    });
 });
 
-function get_kritik_saran() {
+function get_kritik_saran(append = false) {
     $.ajax({
         url: base_url + _controller + "/get_data_message",
         method: "GET",
+        data: {
+            limit: limit,
+            offset: offset
+        },
         dataType: "json",
-        success: function (data) {
-            $("#data_kritik_saran").empty();
-            if (data.length === 0) {
+        success: function (response) {
+            console.log("Response:", response); // Log the entire response
+
+            if (!append) {
+                $("#data_kritik_saran").empty();
+            }
+            
+            var data = response.data;
+            total_count = response.total_count;
+
+            console.log("Data length:", data.length);
+            console.log("Total count:", total_count);
+
+            if (data.length === 0 && offset === 0) {
                 $("#data_kritik_saran").html("<p>Tidak ada kritik dan saran.</p>");
+                $("#btn_tampil_data").hide();
             } else {
                 data.forEach(function (item) {
                     var status_kritik = "";
@@ -32,6 +57,8 @@ function get_kritik_saran() {
                         status_kritik = "Telah dibaca oleh admin";
                     } else if (item.status == 1) {
                         status_kritik = "Belum dicek oleh admin";
+                    } else {
+                        status_kritik = "Status tidak dikenal: " + item.status;
                     }
 
                     var list = `
@@ -47,13 +74,24 @@ function get_kritik_saran() {
 
                     $("#data_kritik_saran").append(list);
                 });
+
+                // Hide "Tampilkan lebih banyak" button if all data is loaded
+                if ($("#data_kritik_saran").children().length >= total_count) {
+                    $("#btn_tampil_data").hide();
+                } else {
+                    $("#btn_tampil_data").show();
+                }
             }
         },
         error: function (xhr, status, error) {
-            console.error("AJAX Error: " + error);
+            console.error("AJAX Error:", error);
+            console.error("Status:", status);
+            console.error("Response:", xhr.responseText);
+            $("#data_kritik_saran").html("<p>Terjadi kesalahan saat memuat data. Silakan coba lagi nanti.</p>");
         }
     });
 }
+
 
 function insert_message() {
     var formData = new FormData();

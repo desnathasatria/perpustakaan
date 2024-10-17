@@ -3,6 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Front_page extends CI_Controller
 {
+    var $module_js = ['message'];
     var $app_data = [];
     public function header()
     {
@@ -16,12 +17,6 @@ class Front_page extends CI_Controller
     {
         $this->header();
         $this->load->view('index', $this->app_data);
-        $this->footer();
-    }
-    public function contact()
-    {
-        $this->header();
-        $this->load->view('contact', $this->app_data);
         $this->footer();
     }
     public function profile()
@@ -44,15 +39,37 @@ class Front_page extends CI_Controller
         $this->load->library('pagination');
     }
 
-    public function get_data_message()
+    public function contact($page = 1)
     {
+        $limit = 4;
+        $offset = ($page - 1) * $limit;
+
         $query = [
             'select' => 'id, name, email, message, date_send, status',
             'from' => 'message_user',
-            'order_by' => 'id DESC'
+            'where' => ['status !=' => 0], // Exclude messages with status 0
+            'order_by' => 'id DESC',
+            'limit' => $limit,
+            'offset' => $offset
         ];
-        $result = $this->data->get($query)->result();
-        echo json_encode($result);
+
+        $kritik_saran = $this->data->get($query)->result();
+
+        // Count total records
+        $count_query = [
+            'select' => 'COUNT(*) as total',
+            'from' => 'message_user',
+            'where' => ['status !=' => 0]
+        ];
+        $total_count = $this->data->get($count_query)->row()->total;
+
+        $this->app_data['kritik_saran'] = $kritik_saran;
+        $this->app_data['total_count'] = $total_count;
+        $this->app_data['current_page'] = $page;
+
+        $this->header();
+        $this->load->view('contact', $this->app_data);
+        $this->footer();
     }
 
     public function insert_message()
@@ -62,24 +79,20 @@ class Front_page extends CI_Controller
         $this->form_validation->set_rules('pesan', 'Pesan', 'required|trim');
 
         if ($this->form_validation->run() == false) {
-            $response['errors'] = $this->form_validation->error_array();
+            $this->contact_page(); // Reload the contact page with validation errors
         } else {
-            $nama = $this->input->post('nama_pengirim');
-            $email = $this->input->post('email_pengirim');
-            $pesan = $this->input->post('pesan');
-
             $data = array(
-                'name' => $nama,
-                'email' => $email,
-                'message' => $pesan,
+                'name' => $this->input->post('nama_pengirim'),
+                'email' => $this->input->post('email_pengirim'),
+                'message' => $this->input->post('pesan'),
                 'date_send' => date('Y-m-d H:i:s'),
                 'status' => 1  // Set initial status to 1 (Belum dicek oleh admin)
             );
             $this->data->insert('message_user', $data);
 
-            $response['success'] = "Pesan berhasil dikirim!";
+            $this->session->set_flashdata('success', 'Pesan berhasil dikirim!');
+            redirect('Front_page/contact');
         }
-
-        echo json_encode($response);
     }
+
 }

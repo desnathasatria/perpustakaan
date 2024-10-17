@@ -28,41 +28,34 @@
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                 <div>
                     <h4 class="text-primary">Kirim pesan anda</h4>
-                    <form id="contactForm">
+                    <?php echo form_open('front_page/insert_message', ['id' => 'contactForm']); ?>
                         <div class="row g-3">
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control border-0" id="nama_pengirim" name="nama_pengirim" placeholder="Nama Lengkap">
                                     <label for="nama_pengirim">Nama Lengkap</label>
                                 </div>
-                                <small class="text-danger pl-1 mb-1" id="error-nama_pengirim"></small>
+                                <small class="text-danger pl-1 mb-1"><?php echo form_error('nama_pengirim'); ?></small>
                             </div>
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control border-0" id="email_pengirim" name="email_pengirim" placeholder="Email">
                                     <label for="email_pengirim">Email</label>
                                 </div>
-                                <small class="text-danger pl-1 mb-1" id="error-email_pengirim"></small>
+                                <small class="text-danger pl-1 mb-1"><?php echo form_error('email_pengirim'); ?></small>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control border-0" placeholder="Leave a message here" id="pesan" name="pesan" style="height: 120px"></textarea>
                                     <label for="pesan">Pesan</label>
                                 </div>
-                                <small class="text-danger pl-1 mb-1" id="error-pesan"></small>
+                                <small class="text-danger pl-1 mb-1"><?php echo form_error('pesan'); ?></small>
                             </div>
                             <div class="col-12">
-                                <button type="button" class="btn btn-primary w-100 py-3" onclick="insert_message()">Kirim Pesan</button>
+                                <button type="submit" class="btn btn-primary w-100 py-3">Kirim Pesan</button>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="rounded">
-                    <iframe class="rounded w-100"
-                        style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.792088774346!2d112.01468981335377!3d-7.811820588437099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78573d779b34b3%3A0x401551f038d17616!2sPublic%20Library%20of%20Kediri%20City!5e0!3m2!1sen!2sid!4v1722348036179!5m2!1sen!2sid"
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <?php echo form_close(); ?>
                 </div>
             </div>
         </div>
@@ -72,21 +65,33 @@
 
 <!-- Kritik dan Saran Start -->
 <div class="container py-5">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-primary mb-4">Kritik dan Saran</h2>
-            </div>
-        </div>
-        <div class="row" id="data_kritik_saran">
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <center>
-                    <button type="button" id="btn_tampil_data" class="btn btn-primary">Tampilkan lebih banyak</button>
-                </center>
-            </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-primary mb-4">Kritik dan Saran</h2>
         </div>
     </div>
+    <div class="row" id="data_kritik_saran">
+        <?php if(empty($kritik_saran)): ?>
+            <p>Tidak ada kritik dan saran.</p>
+        <?php else: ?>
+            <?php foreach($kritik_saran as $item): ?>
+                <div class="col-lg-6 mb-4">
+                    <div class="p-4 bg-light rounded">
+                        <h5><?php echo $item->name; ?></h5>
+                        <p class="mb-1"><?php echo $item->message; ?></p>
+                        <p class="text-muted">Tanggal: <?php echo $item->date_send; ?></p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </div>
+    <?php if(count($kritik_saran) < $total_count): ?>
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+    <?php endif; ?>
+</div>
 <!-- Kritik dan Saran End -->
 
 <script>
