@@ -102,7 +102,7 @@
                 </a>
                 <div class="d-flex flex-column ms-3">
                     <span>Hubungi Kami</span>
-                    <a href="tel: 0354693268"><span class="text-dark">0354693268</span></a>
+                    <a href="tel: +6281252776657"><span class="text-dark">081252776657</span></a>
                 </div>
             </div>
         </nav>

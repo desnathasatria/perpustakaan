@@ -28,7 +28,7 @@
             <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                 <div>
                     <h4 class="text-primary">Kirim pesan anda</h4>
-                    <?php echo form_open('front_page/insert_message', ['id' => 'contactForm']); ?>
+                    <?php echo form_open('front_page/contact', ['id' => 'contactForm']); ?>
                         <div class="row g-3">
                             <div class="col-lg-12 col-xl-6">
                                 <div class="form-floating">

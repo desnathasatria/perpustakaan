@@ -66,7 +66,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="<?= base_url() ?>assets/img/lobby.jpg" class="img-fluid w-100 rounded" alt="Lobby" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/lobby.jpg" data-img-title="Kegiatan Literasi">
+                            <img src="<?= base_url() ?>assets/img/lobby.jpg" class="img-fluid w-100 rounded" alt="Lobby" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/lobby.jpg" data-img-title="Lobyy">
                         </div>
                         <div class="gallery-content p-4">
                             <h4 class="mb-2">Lobby</h4>
@@ -77,7 +77,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="<?= base_url() ?>assets/img/pelayanan.jpg" class="img-fluid w-100 rounded" alt="Bagian Pelayanan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/pelayanan.jpg" data-img-title="Kegiatan Literasi">
+                            <img src="<?= base_url() ?>assets/img/pelayanan.jpg" class="img-fluid w-100 rounded" alt="Bagian Pelayanan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/pelayanan.jpg" data-img-title="Pelayanan">
                         </div>
                         <div class="gallery-content p-4">
                             <h4 class="mb-2">Bagian Pelayanan</h4>
@@ -88,7 +88,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="<?= base_url() ?>assets/img/rakbuku2.jpg" class="img-fluid w-100 rounded" alt="Rak Buku" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/rakbuku2.jpg" data-img-title="Kegiatan Literasi">
+                            <img src="<?= base_url() ?>assets/img/rakbuku2.jpg" class="img-fluid w-100 rounded" alt="Rak Buku" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/rakbuku2.jpg" data-img-title="Rak Buku">
                         </div>
                         <div class="gallery-content p-4">
                             <h4 class="mb-2">Rak Buku</h4>
@@ -99,7 +99,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="<?= base_url() ?>assets/img/depan.jpg" class="img-fluid w-100 rounded" alt="Halaman Depan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/depan.jpg" data-img-title="Bedah Buku">
+                            <img src="<?= base_url() ?>assets/img/depan.jpg" class="img-fluid w-100 rounded" alt="Halaman Depan" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/depan.jpg" data-img-title="Halaman Depan">
                         </div>
                         <div class="gallery-content p-4">
                             <h4 class="mb-2">Halaman Depan</h4>
@@ -110,7 +110,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="gallery-item">
                         <div class="gallery-img">
-                            <img src="<?= base_url() ?>assets/img/mobil.jpg" class="img-fluid w-100 rounded" alt="Mobil Perpustakaan Keliling" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/mobil.jpg" data-img-title="Lomba Menulis">
+                            <img src="<?= base_url() ?>assets/img/mobil.jpg" class="img-fluid w-100 rounded" alt="Mobil Perpustakaan Keliling" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="<?= base_url() ?>assets/img/mobil.jpg" data-img-title="Perppustakaan Kelilinh">
                         </div>
                         <div class="gallery-content p-4">
                             <h4 class="mb-2">Mobil Perpustakaan Keliling</h4>
