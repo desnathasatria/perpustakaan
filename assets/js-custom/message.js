@@ -23,6 +23,10 @@ $(document).ready(function () {
     });
 });
 
+var limit = 10;
+var offset = 0;
+var total_count = 0;
+
 function get_kritik_saran(append = false) {
     $.ajax({
         url: base_url + _controller + "/get_data_message",
@@ -33,17 +37,12 @@ function get_kritik_saran(append = false) {
         },
         dataType: "json",
         success: function (response) {
-            console.log("Response:", response); // Log the entire response
-
             if (!append) {
                 $("#data_kritik_saran").empty();
             }
             
             var data = response.data;
             total_count = response.total_count;
-
-            console.log("Data length:", data.length);
-            console.log("Total count:", total_count);
 
             if (data.length === 0 && offset === 0) {
                 $("#data_kritik_saran").html("<p>Tidak ada kritik dan saran.</p>");
@@ -57,14 +56,22 @@ function get_kritik_saran(append = false) {
                         status_kritik = "Telah dibaca oleh admin";
                     } else if (item.status == 1) {
                         status_kritik = "Belum dicek oleh admin";
-                    } else {
-                        status_kritik = "Status tidak dikenal: " + item.status;
                     }
+
+                    var imageHtml = item.image 
+                        ? `<div class="message-image mb-3">
+                             <img src="${base_url}uploads/messages/${item.image}" 
+                                  class="img-fluid rounded" 
+                                  alt="Uploaded Image"
+                                  style="max-width: 100%; height: auto;">
+                           </div>`
+                        : '';
 
                     var list = `
                         <div class="col-lg-6 mb-4">
                             <div class="p-4 bg-light rounded">
                                 <h5>${item.name}</h5>
+                                ${imageHtml}
                                 <p class="mb-1">${item.message}</p>
                                 <p class="text-muted">Tanggal: ${item.date_send}</p>
                                 <p class="text-muted">Status: ${status_kritik}</p>
@@ -75,7 +82,6 @@ function get_kritik_saran(append = false) {
                     $("#data_kritik_saran").append(list);
                 });
 
-                // Hide "Tampilkan lebih banyak" button if all data is loaded
                 if ($("#data_kritik_saran").children().length >= total_count) {
                     $("#btn_tampil_data").hide();
                 } else {
@@ -85,13 +91,10 @@ function get_kritik_saran(append = false) {
         },
         error: function (xhr, status, error) {
             console.error("AJAX Error:", error);
-            console.error("Status:", status);
-            console.error("Response:", xhr.responseText);
             $("#data_kritik_saran").html("<p>Terjadi kesalahan saat memuat data. Silakan coba lagi nanti.</p>");
         }
     });
 }
-
 
 function insert_message() {
     var formData = new FormData();

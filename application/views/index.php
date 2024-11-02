@@ -17,7 +17,6 @@
     </div>
     <!-- Modal Search End -->
 
-
     <!-- Carousel Start -->
     <div class="header-carousel owl-carousel">
         <div class="header-carousel-item bg-primary">
@@ -27,14 +26,19 @@
                         <div class="col-lg-7 animated fadeInLeft">
                             <div class="text-sm-center text-md-start">
                                 <h4 class="text-white text-uppercase fw-bold mb-4">Selamat Datang di Perpustakaan Kota Kediri</h4>
+                                <h1 class="text-white display-4 mb-4">Temukan Dunia Pengetahuan & Kesenangan Membaca!</h1>
+                                <p class="text-white mb-4">Nikmati koleksi buku yang beragam, ruang baca yang nyaman, dan berbagai kegiatan literasi yang menarik untuk semua kalangan. Jadikan Perpustakaan Kota Kediri tujuan utama Anda untuk inspirasi dan ilmu pengetahuan!</p>
                                 <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="https://youtu.be/E1d3NGh_fCE?si=QJoAU7_NKVRiH1tX"><i class="fas fa-play-circle me-2"></i> Lihat Video</a>
+                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="https://youtu.be/E1d3NGh_fCE?si=QJoAU7_NKVRiH1tX">
+                                        <i class="fas fa-play-circle me-2"></i> Lihat Video Perpustakaan
+                                    </a>
+                                    <a class="btn btn-outline-light rounded-pill py-3 px-4 px-md-5" href="https://inlislite.perpusnas.go.id/">Jelajahi Galeri</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-5 animated fadeInRight">
-                            <div class="calrousel-img" style="object-fit: cover;">
-                                <img src="<?= base_url() ?>assets/img/logo.png" class="img-fluid w-100" alt="">
+                            <div class="carousel-img" style="object-fit: cover;">
+                                <img src="<?= base_url() ?>assets/img/logo.png" class="img-fluid w-100" alt="Perpustakaan Kota Kediri">
                             </div>
                         </div>
                     </div>
@@ -43,6 +47,7 @@
         </div>
     </div>
     <!-- Carousel End -->
+
     <!-- Start Gallery Section -->
     <div class="container-fluid gallery py-5">
         <div class="container py-5">
@@ -155,7 +160,7 @@
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Perpustakaan Keliling</a>
+                                <a href="<?= base_url("Front_page/kegiatan_1") ?>" class="d-inline-block h4 mb-4">Perpustakaan Keliling</a>
                                 <p class="mb-4">Kegiatan Perpustakaan Keliling yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
@@ -168,7 +173,7 @@
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Literasi Buku Bersama</a>
+                                <a href="<?= base_url("Front_page/kegiatan_2") ?>"" class=" d-inline-block h4 mb-4">Literasi Buku Bersama</a>
                                 <p class="mb-4">Kegiatan Listerasi Buku bersama yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
@@ -181,7 +186,7 @@
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Lomba</a>
+                                <a href="<?= base_url("Front_page/kegiatan_3") ?>"" class=" d-inline-block h4 mb-4">Lomba</a>
                                 <p class="mb-4">Kegiatan Lomba yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
@@ -194,7 +199,7 @@
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Pentas Seni</a>
+                                <a href="<?= base_url("Front_page/kegiatan_4") ?>"" class=" d-inline-block h4 mb-4">Pentas Seni</a>
                                 <p class="mb-4">Kegiatan Pentas Seni yang dilakukan oleh Perpustakaan Kota Kediri</p>
                             </div>
                         </div>
