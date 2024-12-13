@@ -8,9 +8,9 @@
                             <div class="col-md-6 col-lg-6 col-xl-5">
                                 <div class="footer-item">
                                     <a href="index.html" class="p-0">
-                                        <h3 class="text-white"></i> Perpustakaan Umum Kota Kediri</h3>
+                                        <h3 class="text-white"></i> Warung Bureso</h3>
                                     </a>
-                                    <p class="text-white mb-4">Perpustakaan yang terdapat di kota kediri</p>
+                                    <p class="text-white mb-4">Warung Bureso Kertosono di Kota Kediri</p>
                                     <div class="footer-btn d-flex">
                                         <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
                                         <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
@@ -30,10 +30,10 @@
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <span class="text-body"><i class="fas fa-copyright text-light me-2"></i>Perpustakaan Kota Kediri</a></span>
+                    <span class="text-body"><i class="fas fa-copyright text-light me-2"></i>Warung BuReso</a></span>
                 </div>
                 <div class="col-md-6 text-center text-md-start text-body">
-                    Designed By <a class="border-bottom text-white">Sindy Wahyu Rahmawati
+                    Designed By <a class="border-bottom text-white">
                 </div>
             </div>
         </div>

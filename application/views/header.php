@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Perpustakaan Kota Kediri</title>
+        <title>Warung Bureso</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -48,7 +48,7 @@
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
                         <div class="ps-3">
-                            <a href="mailto:example@gmail.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>perpuskotakediri@gmail.com</a>
+                            <a href="mailto:example@gmail.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>bureso@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                             <img src="<?= base_url() ?>assets/img/logo.png" alt="Logo">
                         </td>
                         <td>
-                            <h1 class="text-primary mb-0">Perpustakaan Kota Kediri</h1>
+                            <h1 class="text-primary mb-0">Warung Bureso</h1>
                         </td>
                     </tr>
                 </table>
@@ -89,7 +89,6 @@
                 <div class="navbar-nav mx-0 mx-lg-auto">
                     <a href="<?= base_url() ?>" class="nav-item nav-link <?= $this->uri->segment(1) == '' ? 'active' : '' ?>">Home</a>
                     <a href="<?= base_url("Front_page/profile") ?>" class="nav-item nav-link <?= $this->uri->segment(2) == 'profile' ? 'active' : '' ?>">Profil</a>
-                    <a href="<?= base_url("Front_page/service") ?>" class="nav-item nav-link <?= $this->uri->segment(2) == 'service' ? 'active' : '' ?>">Pelayanan</a>
                     <a href="<?= base_url("Front_page/contact") ?>" class="nav-item nav-link <?= $this->uri->segment(2) == 'contact' ? 'active' : '' ?>">Kontak</a>
                 </div>
             </div>
